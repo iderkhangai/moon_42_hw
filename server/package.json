@@ -1,0 +1,20 @@
+{
+    "name": "moon42",
+    "version": "1.0.0",
+    "description": "homework for moon42",
+    "main": "server.js",
+    "scripts": {
+        "hmr": "nodemon index.js",
+        "nodemon": "npm run hmr",
+        "start": "node index.js"
+    },
+    "keywords": [
+        "moon42"
+    ],
+    "author": "iderkhangai amarkhuu",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.1"
+    }
+}

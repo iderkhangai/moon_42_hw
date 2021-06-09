@@ -1,0 +1,26 @@
+<body>
+    <form class="sub-form">
+        <div>
+            <img src="https://www.moon42.com/images/moon42-logo-highdpi-2018-11-15.png" width="70%" class="center" />
+        </div>
+        <div class="input-contain">
+            <h2 class="info">Moon42 homework</h2>
+            <input type="text" [(ngModel)]="input" id="input" name="input" placeholder="Enter your text here..." required />
+            <div class="allsub">
+                <button class="submit" (click)="getData()" type="submit">Submit</button>
+                <div class="submit-under"></div>
+            </div>
+            <div class="alert alert-danger" *ngIf="loading">loading...</div>
+
+            <div *ngIf="errorMessage" class="alert alert-danger">
+                <strong>Error!</strong> {{ errorMessage }}
+            </div>
+
+            <div class="terminal">
+                <ul *ngFor="let item of data" class="listData">
+                    <li>{{ item }}</li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</body>
